@@ -1,0 +1,160 @@
+body{
+  background: linear-gradient(
+    130deg,
+   #171b4d 30%,
+    #ff2600b6 100%
+  );
+}
+
+.header{
+  box-shadow: 0 22px 46px rgba(0,0,0,0.8);
+}
+
+/* Promo Event Pages Style */
+
+.promo-event-details {
+    padding: 140px 20px;
+    color: #ecf0f1;
+}
+
+.promo-event-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.promo-event-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 20px 20px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    margin: 0;
+    color: var(--color-secondary);
+    font-family: var(--font-body);
+}
+
+.promo-event-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: #000;
+}
+
+.promo-event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.promo-event-image:hover img {
+    transform: scale(1.05);
+}
+
+.promo-event-info {
+    padding: 40px;
+}
+
+.promo-event-info h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--color-secondary);
+    font-family: var(--font-body);
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.promo-event-info h3 {
+    font-size: 1.3rem;
+    margin: 25px 0 15px;
+    color: var(--color-secondary);
+    font-family: var(--font-body);
+}
+
+.promo-event-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--color-background);
+    font-family: var(--font-body);
+}
+
+.promo-event-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.promo-event-info li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-background);
+}
+
+.promo-event-info li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .promo-event-title {
+        font-size: 1.8rem;
+        padding: 20px 15px;
+    }
+
+    .promo-event-image {
+        height: 200px;
+    }
+
+    .promo-event-info {
+        padding: 25px;
+    }
+
+    .promo-event-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .promo-event-info h3 {
+        font-size: 1.1rem;
+    }
+}
+
+
+.back-link-section {
+    padding: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.back-link {
+    font-family: var(--font-body);
+    display: inline-block;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.back-link i {
+    margin-right: 5px;
+}
