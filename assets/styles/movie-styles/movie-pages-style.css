@@ -33,10 +33,63 @@ body {
 }
 
 
+/* MOVIE TITLE SECTION */
+.movie-title-section {
+  padding: 6rem 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.movie-title {
+  font-family: var(--font-body);
+  font-size: 3.5rem;
+  color: #fff;
+
+  margin-top: 5rem;
+  letter-spacing: 2px;
+}
+
+.movie-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .movie-title-section {
+    padding: 4rem 1.25rem;
+  }
+  .movie-title {
+    font-size: 2.5rem;
+  }
+  .movie-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-title-section {
+    padding: 3rem 1rem;
+  }
+  .movie-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  .movie-subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+}
+
 
 
 .movie-trailer {
-  padding: 10rem 1.25rem;
+  /* padding: 10rem 1.25rem; */
   margin: 0 auto;
   max-width: 1100px;
   color: var(--color-text);
@@ -601,3 +654,5 @@ body {
     font-size: 0.95rem;
   }
 }
+
+

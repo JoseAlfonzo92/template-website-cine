@@ -25,6 +25,14 @@ body {
   margin: 0 auto 2.5rem;
 }
 
+.page-title {
+  font-family: var(--font-body);
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
 .section-title {
   font-family: var(--font-body);
   font-size: 2rem;
