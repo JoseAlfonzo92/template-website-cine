@@ -27,11 +27,19 @@ slides.forEach((_, i) => {
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.remove("active");
-    dotsContainer.children[i].classList.remove("active");
+
+    const dot = dotsContainer.children[i];
+    dot.classList.remove("active");
+    dot.removeAttribute("aria-current");
   });
+
   slides[index].classList.add("active");
-  dotsContainer.children[index].classList.add("active");
+
+  const activeDot = dotsContainer.children[index];
+  activeDot.classList.add("active");
+  activeDot.setAttribute("aria-current", "true");
 }
+
 
 function nextSlide() {
   currentIndex = (currentIndex + 1) % slides.length;
