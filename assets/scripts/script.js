@@ -25,22 +25,12 @@ slides.forEach((_, i) => {
 });
 
 function showSlide(index) {
-  // Create dots
-slides.forEach((_, i) => {
-  const dot = document.createElement("button");
-
-  // Accessibility
-  dot.setAttribute("aria-label", `Ir al slide ${i + 1}`);
-
-  if (i === 0) {
-    dot.classList.add("active");
-    dot.setAttribute("aria-current", "true");
-  }
-
-  dot.addEventListener("click", () => goToSlide(i));
-  dotsContainer.appendChild(dot);
-});
-
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    dotsContainer.children[i].classList.remove("active");
+  });
+  slides[index].classList.add("active");
+  dotsContainer.children[index].classList.add("active");
 }
 
 function nextSlide() {
