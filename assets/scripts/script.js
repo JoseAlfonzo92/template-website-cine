@@ -8,6 +8,15 @@ hamburger.addEventListener("click", () => {
   mobileMenu.style.display = isActive ? "block" : "none";
 });
 
+// Close menu when clicking outside
+document.addEventListener("click", (event) => {
+  if (!hamburger.contains(event.target) && !mobileMenu.contains(event.target)) {
+    hamburger.classList.remove("active");
+    mobileMenu.style.display = "none";
+  }
+});
+
+
 // Carousel logic with smooth fade
 const slides = document.querySelectorAll(".slide");
 const prevBtn = document.getElementById("prev");
